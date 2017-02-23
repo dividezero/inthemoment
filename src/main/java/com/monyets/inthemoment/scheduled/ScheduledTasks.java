@@ -23,4 +23,10 @@ public class ScheduledTasks {
     public void reportCurrentTime() {
         log.info("The time is now {}", dateFormat.format(new Date()));
     }
+
+    @Scheduled(fixedRate = 60000) // one minute
+    public void cleanChannel() {
+        log.info("The time is now {}", dateFormat.format(new Date()));
+        //todo do REST request here
+    }
 }
