@@ -12,9 +12,10 @@ public final class Constants {
     public static final String ANONYMOUS_USER = "anonymoususer";
 
     public static final String DEFAULT_CHANNEL_ID = "C3NMEQF3Q";
-    public static final String DEFAULT_USER_TOKEN = "xoxp-68007742017-146065674359-145306222147-56fb7365eba56d70b2f484e06df25242";
+    public static final String DEFAULT_USER_TOKEN = "xoxp-68007742017-146065674359-151992147046-2e2c7cfc6647e3df70dc805e765fdb8a";
     public static final int MAX_MESSAGE_AGE = 3600000;
 
+    public static final int TIME_ONE_HOUR = 3600 * 1000;
 
     private Constants() {
     }
