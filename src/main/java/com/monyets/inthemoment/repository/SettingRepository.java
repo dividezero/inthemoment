@@ -12,4 +12,5 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface SettingRepository extends JpaRepository<Setting,Long> {
 
+    List<Setting> findByName(String name);
 }

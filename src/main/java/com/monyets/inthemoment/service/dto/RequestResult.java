@@ -1,5 +1,6 @@
 package com.monyets.inthemoment.service.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.monyets.inthemoment.domain.Message;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -13,11 +14,13 @@ import java.util.List;
 //@Data
 @EqualsAndHashCode
 @ToString
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class RequestResult {
     private Boolean ok;
     private List<Message> messages;
     private Boolean has_more;
     private Boolean is_limited;
+    private String error;
 
     public Boolean getOk() {
         return ok;
@@ -51,5 +54,11 @@ public class RequestResult {
         this.is_limited = is_limited;
     }
 
+    public String getError() {
+        return error;
+    }
 
+    public void setError(String error) {
+        this.error = error;
+    }
 }
